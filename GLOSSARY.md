@@ -21,7 +21,7 @@ The user's act that makes the open month a closed month and opens the next month
 _Avoid_: rollover, archive, end the month
 
 **Row**:
-The record of one bill, chore, or income in one month: only what is true for that month, such as its amounts and its mark. The name and the due day belong to the bill, chore, or income, not to the row.
+The record of one bill, chore, or income in one month: only what is true for that month, such as its due day, its amounts, and its mark. The name belongs to the bill, chore, or income, not to the row.
 _Avoid_: entry, instance, month item
 
 **Expected amount**:
@@ -35,3 +35,15 @@ _Avoid_: real amount, paid amount
 **Bill**:
 A payment that the user plans to make each month, from its start month to its end month. A bill can have no end month. A card's statement is an ordinary bill.
 _Avoid_: installment, expense, payment
+
+**Income**:
+Money that the user plans to have in a month, from its start month to its end month. It has one amount for each month and no mark, because it tells the user how much money they have to work with, not a task to do. A one-off income has the same start month and end month.
+_Avoid_: salary, earning, received income
+
+**Overdue**:
+A row of the open month that is not marked (not paid or not done), and whose due date is before today. A row with no due day is never overdue, and an income is never overdue.
+_Avoid_: late, past due
+
+**Recurrence**:
+The months of the year in which a bill, chore, or income shows, for example only June and December. It has at least one month, and the default is all twelve.
+_Avoid_: months of the year, mask, schedule
