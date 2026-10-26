@@ -17,5 +17,5 @@ A month that the user has closed. It is final: its rows never change, and it doe
 _Avoid_: past month, archived month
 
 **Close**:
-The user's act that makes the open month a closed month and opens the next month.
+The user's act that makes the open month a closed month and opens the next month. Close carries nothing over to the next month.
 _Avoid_: rollover, archive, end the month
