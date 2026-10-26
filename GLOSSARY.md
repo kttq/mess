@@ -25,11 +25,11 @@ The record of one bill, chore, or income in one month: only what is true for tha
 _Avoid_: entry, instance, month item
 
 **Expected amount**:
-The amount that the user plans to pay for a bill, or to receive for an income, in one month. A new month expects the previous month's actual amount, or the previous month's expected amount if there is no actual amount. The user can change it while the row is not paid or not received.
+The amount that the user plans to pay for a bill in one month. A new month expects the previous month's actual amount, or the previous month's expected amount if there is no actual amount. The user can change it while the row is not paid.
 _Avoid_: budget, planned amount, default amount
 
 **Actual amount**:
-The amount that the user really paid or received in one month. It is only a record: the paid or received mark, not the actual amount, tells if the row is done. When the user marks a row without an actual amount, the actual amount becomes the expected amount.
+The amount that the user really paid for a bill in one month. It is only a record: the paid mark, not the actual amount, tells if the row is done. When the user marks a row without an actual amount, the actual amount becomes the expected amount.
 _Avoid_: real amount, paid amount
 
 **Bill**:
@@ -37,8 +37,16 @@ A payment that the user plans to make each month, from its start month to its en
 _Avoid_: installment, expense, payment
 
 **Income**:
-Money that the user plans to have in a month, from its start month to its end month. It has one amount for each month and no mark, because it tells the user how much money they have to work with, not a task to do. A one-off income has the same start month and end month.
+Money that the user plans to have in a month, from its start month to its end month. Each of its rows has one amount, which a new month copies from the previous row, and no mark, because it tells the user how much money they have to work with, not a task to do. A one-off income has the same start month and end month.
 _Avoid_: salary, earning, received income
+
+**Available**:
+The money of one currency that is free in a month after its bills: the income amounts, minus each bill that is unpaid or paid with cash. A bill paid with a card does not count, because its money goes out with the card's statement bill.
+_Avoid_: balance, money left, free money
+
+**Pending**:
+The money of one currency that the unpaid bills of a month still need: the sum of their expected amounts.
+_Avoid_: still to pay, outstanding, due
 
 **Overdue**:
 A row of the open month that is not marked (not paid or not done), and whose due date is before today. A row with no due day is never overdue, and an income is never overdue.
