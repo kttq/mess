@@ -40,6 +40,10 @@ _Avoid_: installment, expense, payment
 Money that the user plans to have in a month, from its start month to its end month. Each of its rows has one amount, which a new month copies from the previous row, and no mark, because it tells the user how much money they have to work with, not a task to do. A one-off income has the same start month and end month.
 _Avoid_: salary, earning, received income
 
+**Currency**:
+The kind of money of a bill or an income, named by its current ISO 4217 code, such as USD or ARS. Each currency has a fixed number of minor units (USD has 2, JPY has 0), and amounts of different currencies are never added together.
+_Avoid_: coin, money type
+
 **Available**:
 The money of one currency that is free in a month after its bills: the income amounts, minus each bill that is unpaid or paid with cash. A bill paid with credit does not count, because its money goes out with the credit card's statement bill.
 _Avoid_: balance, money left, free money
