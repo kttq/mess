@@ -33,7 +33,7 @@ The amount that the user really paid for a bill in one month. It is only a recor
 _Avoid_: real amount, paid amount
 
 **Bill**:
-A payment that the user plans to make each month, from its start month to its end month. A bill can have no end month. A card's statement is an ordinary bill.
+A payment that the user plans to make each month, from its start month to its end month. A bill can have no end month. A credit card's statement is an ordinary bill.
 _Avoid_: installment, expense, payment
 
 **Income**:
@@ -41,8 +41,12 @@ Money that the user plans to have in a month, from its start month to its end mo
 _Avoid_: salary, earning, received income
 
 **Available**:
-The money of one currency that is free in a month after its bills: the income amounts, minus each bill that is unpaid or paid with cash. A bill paid with a card does not count, because its money goes out with the card's statement bill.
+The money of one currency that is free in a month after its bills: the income amounts, minus each bill that is unpaid or paid with cash. A bill paid with credit does not count, because its money goes out with the credit card's statement bill.
 _Avoid_: balance, money left, free money
+
+**Payment method**:
+How the user paid a bill in one month: cash or credit. Cash means that the money leaves now, also with a debit card or a bank transfer. Credit means that the money leaves later, with a credit card's statement bill. A bill has a default payment method, which a row gets when the user marks it paid without a method.
+_Avoid_: card, payment type
 
 **Pending**:
 The money of one currency that the unpaid bills of a month still need: the sum of their expected amounts.
