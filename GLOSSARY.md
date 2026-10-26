@@ -20,6 +20,10 @@ _Avoid_: past month, archived month
 The user's act that makes the open month a closed month and opens the next month. Close carries nothing over to the next month.
 _Avoid_: rollover, archive, end the month
 
+**Row**:
+The record of one bill, chore, or income in one month: only what is true for that month, such as its amounts and its mark. The name and the due day belong to the bill, chore, or income, not to the row.
+_Avoid_: entry, instance, month item
+
 **Expected amount**:
 The amount that the user plans to pay for a bill, or to receive for an income, in one month. A new month expects the previous month's actual amount, or the previous month's expected amount if there is no actual amount. The user can change it while the row is not paid or not received.
 _Avoid_: budget, planned amount, default amount
