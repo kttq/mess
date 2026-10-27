@@ -25,7 +25,7 @@ The record of one bill, chore, or income in one month: only what is true for tha
 _Avoid_: entry, instance, month item
 
 **Expected amount**:
-The amount that the user plans to pay for a bill in one month. A new month expects the previous month's actual amount, or the previous month's expected amount if there is no actual amount. The user can change it while the row is not paid.
+The amount that the user plans to pay for a bill in one month. A new row expects the actual amount of the bill's most recent row, or that row's expected amount if there is no actual amount. The most recent row can be from an earlier month than the one before, when the recurrence skips months. The user can change it while the row is not paid.
 _Avoid_: budget, planned amount, default amount
 
 **Actual amount**:
